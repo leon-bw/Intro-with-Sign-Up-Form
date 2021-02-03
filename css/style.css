@@ -112,16 +112,22 @@ input {
     font-weight: 500;  
 }
 
+/* ------ Button and Terms ------ */
 .card__btn {
-    margin-top: 10px;
+    margin-top: 20px;
     background-color: var(--Green);
     color: #fff;
     box-shadow: 0 2px 1px var(--Green);
 }
 
+.card__btn:hover {
+    background-color: #82E2B8;
+    cursor: pointer;
+}
+
 .card__terms {
     font-size: .625rem;
-    margin: 10px 10px 20px;
+    margin: 5px 10px 20px;
     color: var(--Grayish-Blue);
 }
 
@@ -134,15 +140,20 @@ input {
 .card__error {
     color: var(--Red);
     font-size: .625rem;
-    text-align: right;
-    padding-right: 25px;
     font-style: italic;
     visibility: hidden;
+    position: absolute;
+    right: 30px;
+    top: 65px;
+}
+
+.card__input--field .error {
+    border-color: var(--Red);
 }
 
 img {
     position: absolute;
-    bottom: 35px;
+    bottom: 25px;
     right: 50px;
     visibility: hidden;
 }
