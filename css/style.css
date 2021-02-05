@@ -76,6 +76,10 @@ body {
 }
 
 /* ------ Form ------ */
+label {
+    display: none;
+}
+
 input {
     text-indent: 30px;
 }
