@@ -10,65 +10,63 @@
 </head>
 
 <body>
-
-    <section>
         
-        <div class="container">
+    <div class="container">
 
-            <div class="left">
-                <h1 class="heading">Learn to code by watching others</h1>
-                <p class="desc">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+        <div class="left">
+            <h1 class="heading">Learn to code by watching others</h1>
+            <p class="desc">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+        </div>
+
+        <div class="right">
+
+            <div class="card__offer">
+                <p class="card__offer--text"><span>Try it free 7 days</span> then $20/mo. thereafter</p>
             </div>
 
-            <div class="right">
+            <div class="card">
 
-                <div class="card__offer">
-                    <p class="card__offer--text"><span>Try it free 7 days</span> then $20/mo. thereafter</p>
-                </div>
+                <form id="form" method="GET">
+                    <div class="card__input">
+                        <input class="card__input--field" id="firstname" type="text" name="firstname" placeholder="First Name">
+                        <img src="images/icon-error.svg">
+                        <small class="card__error">Error</small>
+                    </div>
+                    <div class="card__input">
+                        <input class="card__input--field" id="lastname" type="text" name="lastname" placeholder="Last Name">
+                        <img src="images/icon-error.svg">
+                        <small class="card__error">Error</small>
+                    </div>
+                    <div class="card__input">
+                        <input class="card__input--field" id="email" type="email" name="email" placeholder="Email Address">
+                        <img src="images/icon-error.svg">
+                        <small class="card__error">Error</small>
+                    </div>
+                    <div class="card__input">
+                        <input class="card__input--field" id="password" type="password" name="password" placeholder="Password">
+                        <img src="images/icon-error.svg">
+                        <small class="card__error">Error</small>
+                    </div>
 
-                <div class="card">
-
-                    <form id="form" method="GET">
-                        <div class="card__input">
-                            <input class="card__input--field" id="firstname" type="text" name="firstname" placeholder="First Name">
-                            <img src="images/icon-error.svg">
-                            <small class="card__error">First Name cannot be empty</small>
-                        </div>
-                        <div class="card__input">
-                            <input class="card__input--field" id="lastname" type="text" name="lastname" placeholder="Last Name">
-                            <img src="images/icon-error.svg">
-                            <small class="card__error">Last Name cannot be empty</small>
-                        </div>
-                        <div class="card__input">
-                            <input class="card__input--field" id="email" type="email" name="email" placeholder="Email Address">
-                            <img src="images/icon-error.svg">
-                            <small class="card__error">Looks like this is not an email</small>
-                        </div>
-                        <div class="card__input">
-                            <input class="card__input--field" id="password" type="password" name="password" placeholder="Password">
-                            <img src="images/icon-error.svg">
-                            <small class="card__error">Password cannot be empty</small>
-                        </div>
-
-                        <button class="card__btn" type="submit">CLAIM YOUR FREE TRIAL</button>
-
-                        <p class="card__terms">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
-                    </form>
-
-                </div>
+                    <button class="card__btn" type="submit">CLAIM YOUR FREE TRIAL</button>
+                    
+                    <p class="card__terms">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+                </form>
 
             </div>
-
-            <footer>
-                <p class="attribution">
-                  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-                  Coded by <a href="https://github.com/leon-bw">Leon Williams</a>.
-                </p>
-            </footer>
 
         </div>
 
-    </section>
+        <footer>
+            <p class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+                Coded by <a href="https://github.com/leon-bw">Leon Williams</a>.
+            </p>
+        </footer>
+
+    </div>
+
+    <script src="script.js" charset="UTF-8"></script>
 
 </body>
 
