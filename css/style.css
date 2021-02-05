@@ -94,9 +94,9 @@ input {
     border: 2px solid var(--Red);
 }
 
-/* .card__input.success input {
-    border:2px solid var(--Green);
-} */
+.card__input.success input {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
 
 .card__input--field, .card__btn {
     height: 50px;
