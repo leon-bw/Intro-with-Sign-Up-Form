@@ -71,9 +71,13 @@ body {
     background-color: var(--Purple);
 }
 
-/* ------ Form ------ */
 .card__offer--text span {
     font-weight: 600;
+}
+
+/* ------ Form ------ */
+input {
+    text-indent: 30px;
 }
 
 .card__input {
@@ -81,20 +85,25 @@ body {
     position: relative;
 }
 
-input {
-    text-indent: 30px;
+.card__input input:focus {
+    outline: 0;
+    border-color: var(--Purple);
 }
+
+.card__input.error input {
+    border: 2px solid var(--Red);
+}
+
+/* .card__input.success input {
+    border:2px solid var(--Green);
+} */
 
 .card__input--field, .card__btn {
     height: 50px;
-    margin: 5px auto;
+    margin: 10px auto;
     width: 90%;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.card__input--field:focus, .card__input--field:active {
-    border: 1px solid var(--Purple) !important;
 }
 
 .card__input--field::-webkit-input-placeholder {
@@ -137,7 +146,7 @@ input {
 }
 
 /* ------ Form Error ------ */
-.card__error {
+.card__input small {
     color: var(--Red);
     font-size: .625rem;
     font-style: italic;
@@ -147,8 +156,8 @@ input {
     top: 65px;
 }
 
-.card__input--field .error {
-    border-color: var(--Red);
+.card__input.error small {
+    visibility: visible;
 }
 
 img {
@@ -156,6 +165,10 @@ img {
     bottom: 25px;
     right: 50px;
     visibility: hidden;
+}
+
+.error img {
+    visibility: visible;
 }
 
 /* ------ Footer ------ */
