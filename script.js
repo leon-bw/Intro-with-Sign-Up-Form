@@ -52,7 +52,16 @@ form.addEventListener('submit', (e) => {
     if (password.value === '') {
         showError(password, 'Password cannot be empty');
     }   else {
-        showSuccess(password);
+        checkLength(password, 8);
     }
 
 });
+
+//Check password length
+function checkLength(input, min) {
+    if(input.value.length < min) {
+        showError(input, `${input.id.charAt(0).toUpperCase() + input.id.slice(1)} must be at least ${min} characters`);
+    } else {
+        showSuccess(password);
+    }
+}
