@@ -131,6 +131,7 @@ input {
     background-color: var(--Green);
     color: #fff;
     box-shadow: 0 2px 1px var(--Green);
+    font-weight: 600;
 }
 
 .card__btn:hover {
